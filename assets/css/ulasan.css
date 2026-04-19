@@ -1,0 +1,42 @@
+﻿/* ─── Gate (belum login) ─── */
+.ulasan-gate {
+  padding: 40px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.ulasan-gate-icon { font-size: 28px; color: var(--sepia-lt); }
+.ulasan-gate-text { font-family: var(--alt-serif); font-size: 15px; color: var(--sepia); line-height: 1.7; }
+.ulasan-gate-actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 8px; }
+.btn-secondary {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  border: 0.5px solid var(--sepia);
+  color: var(--sepia);
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-secondary:hover { background: var(--cream-dk); }
+
+/* ─── Animasi kartu baru ─── */
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Fix: background grid tidak bocor di row terakhir yang tidak penuh ─── */
+.ulasan-full-grid {
+  background: transparent;
+  border: 0.5px solid var(--cream-dk);
+}
+/* Gutter antar card pakai outline di masing-masing card, bukan background grid */
+.ulasan-full-card {
+  outline: 0.5px solid var(--cream-dk);
+}

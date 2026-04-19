@@ -1,0 +1,84 @@
+/* ════════════════════════════════════════════
+   SCROLL FADE IN ANIMATIONS
+════════════════════════════════════════════ */
+
+/* Base class untuk elemen yang akan di-animate */
+.scroll-fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Variasi animasi dengan delay untuk stagger effect */
+.scroll-fade-in.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.scroll-fade-in.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.scroll-fade-in.delay-3 {
+  transition-delay: 0.3s;
+}
+
+.scroll-fade-in.delay-4 {
+  transition-delay: 0.4s;
+}
+
+.scroll-fade-in.delay-5 {
+  transition-delay: 0.5s;
+}
+
+/* Animasi fade in dari kiri */
+.scroll-fade-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-fade-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Animasi fade in dari kanan */
+.scroll-fade-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-fade-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Animasi zoom in */
+.scroll-fade-in-zoom {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-fade-in-zoom.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Animasi dengan rotasi subtle */
+.scroll-fade-in-rotate {
+  opacity: 0;
+  transform: translateY(30px) rotate(-2deg);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-fade-in-rotate.visible {
+  opacity: 1;
+  transform: translateY(0) rotate(0deg);
+}

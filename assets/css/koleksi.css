@@ -1,0 +1,32 @@
+﻿
+/* ══════════════════════════════════════════════
+   PAGE: KOLEKSI
+══════════════════════════════════════════════ */
+.koleksi-filter { display:flex; align-items:center; gap:0; border:0.5px solid var(--cream-dk); background:var(--parchment); overflow:hidden; width:fit-content; margin-bottom:32px; }
+.filter-btn { font-family:var(--mono); font-size:8.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--sepia); padding:9px 20px; cursor:pointer; background:none; border:none; border-right:0.5px solid var(--cream-dk); transition:background 0.2s, color 0.2s; }
+.filter-btn:last-child { border-right:none; }
+.filter-btn.active, .filter-btn:hover { background:var(--ink); color:var(--linen); }
+
+.koleksi-full-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--cream-dk); border:0.5px solid var(--cream-dk); }
+.koleksi-full-card { background:var(--linen); padding:24px; display:flex; flex-direction:column; gap:12px; cursor:pointer; transition:background 0.2s; }
+.koleksi-full-card:hover { background:var(--parchment); }
+.kf-img { height:160px; background:var(--parchment); border:0.5px dashed var(--cream-dk); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
+.kf-img .inner-pattern { position:absolute; inset:0; background-image:repeating-linear-gradient(45deg,transparent,transparent 8px,rgba(200,185,154,0.15) 8px,rgba(200,185,154,0.15) 9px); }
+.kf-img svg { opacity:0.12; }
+.kf-num { font-family:var(--mono); font-size:8.5px; letter-spacing:0.14em; color:var(--sepia-lt); }
+.kf-cat { font-family:var(--mono); font-size:8px; letter-spacing:0.16em; text-transform:uppercase; color:var(--moss); }
+.kf-title { font-family:var(--serif); font-size:16px; font-weight:400; line-height:1.25; color:var(--ink); }
+.kf-era { font-family:var(--mono); font-size:8.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--sepia-lt); }
+.kf-desc { font-family:var(--alt-serif); font-size:12px; font-weight:300; line-height:1.6; color:var(--sepia); }
+
+.koleksi-detail-strip { display:grid; grid-template-columns:2fr 1fr; gap:0; border:0.5px solid var(--cream-dk); background:var(--cream-dk); margin-top:48px; }
+.kd-main { background:var(--linen); padding:40px; display:flex; flex-direction:column; gap:20px; }
+.kd-side { background:var(--parchment); padding:32px; display:flex; flex-direction:column; gap:16px; }
+.kd-label { font-family:var(--mono); font-size:9px; letter-spacing:0.14em; text-transform:uppercase; color:var(--sepia-lt); margin-bottom:6px; }
+.kd-title { font-family:var(--serif); font-size:32px; font-weight:300; color:var(--ink); line-height:1.1; }
+.kd-body { font-family:var(--alt-serif); font-size:14px; font-weight:300; line-height:1.8; color:var(--sepia); }
+.kd-meta-row { display:flex; align-items:baseline; gap:12px; padding:12px 0; border-bottom:0.5px solid var(--cream-dk); }
+.kd-meta-row:last-child { border-bottom:none; }
+.kd-meta-key { font-family:var(--mono); font-size:8.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--sepia-lt); min-width:90px; }
+.kd-meta-val { font-family:var(--alt-serif); font-size:13px; font-weight:300; color:var(--ink); }
+

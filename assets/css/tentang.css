@@ -1,0 +1,99 @@
+﻿
+/* ══════════════════════════════════════════════
+   PAGE: TENTANG MUSEUM
+══════════════════════════════════════════════ */
+.about-grid { display:grid; grid-template-columns:1fr 0.5px 1fr; border-bottom:0.5px solid var(--cream-dk); }
+.about-col { padding:64px 48px 64px 0; }
+.about-col:last-child { padding:64px 0 64px 48px; }
+.about-div { background:var(--cream-dk); }
+.about-body { font-family:var(--alt-serif); font-size:14.5px; font-weight:300; line-height:1.85; color:var(--sepia); }
+.about-body p + p { margin-top:18px; }
+.about-body strong { font-weight:400; color:var(--ink); }
+
+.timeline { display:flex; flex-direction:column; gap:0; margin-top:40px; }
+.timeline-item { display:grid; grid-template-columns:80px 1px 1fr; gap:24px; padding-bottom:32px; }
+.timeline-item:last-child { padding-bottom:0; }
+.tl-year { font-family:var(--serif); font-size:22px; font-weight:300; color:var(--sepia); line-height:1; padding-top:2px; text-align:right; }
+.tl-line { background:var(--cream-dk); position:relative; }
+.tl-line::before { content:''; position:absolute; top:6px; left:50%; transform:translateX(-50%); width:7px; height:7px; border-radius:50%; background:var(--sepia); border:1.5px solid var(--linen); outline:0.5px solid var(--sepia); }
+.tl-content { padding-top:0; }
+.tl-title { font-family:var(--serif); font-size:17px; font-weight:400; color:var(--ink); line-height:1.2; }
+.tl-body { font-family:var(--alt-serif); font-size:13px; font-weight:300; color:var(--sepia); line-height:1.65; margin-top:6px; }
+
+.team-grid { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  /* JANGAN PAKE GAP 1px, itu yang bikin kelihatan nyambung */
+  gap: 32px; 
+  /* Background grid harus transparan biar shadow kartu kelihatan */
+  background: transparent; 
+  border: none; 
+  padding: 20px;
+}
+
+.team-card { 
+  background: var(--linen); 
+  padding: 32px; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 16px; 
+  transition: all 0.3s ease;
+
+  /* INI YANG BIKIN GAK KOTAK LAGI */
+  border-radius: 30px; /* Makin gede makin membulat/cute */
+  border: 2px solid var(--sepia); /* Kasih garis biar tegas */
+  
+  /* SHADOW BIAR GAK FLAT */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08); 
+  
+  /* Supaya sudut yang tajam beneran ilang */
+  overflow: hidden; 
+}
+
+.team-card:hover { 
+  background: var(--parchment); 
+  transform: translateY(-8px); 
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12); 
+  border-color: var(--ink);
+}
+
+.team-avatar { 
+  width: 64px; 
+  height: 64px; 
+  /* Bikin avatar-nya juga ikutan cute (squircle) */
+  border-radius: 20px; 
+  background: var(--parchment); 
+  border: 1px solid var(--cream-dk); 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-family: var(--serif); 
+  font-size: 24px; 
+  color: var(--sepia); 
+}
+
+.team-name { 
+  font-family: var(--serif); 
+  font-size: 22px; 
+  font-weight: 600; 
+  color: var(--ink); 
+}
+
+.team-role { 
+  font-family: var(--mono); 
+  font-size: 10px; 
+  letter-spacing: 0.1em; 
+  text-transform: uppercase; 
+  color: var(--sepia-lt);
+  background: rgba(0,0,0,0.05);
+  padding: 6px 12px;
+  border-radius: 50px; /* Bentuk pill biar skena */
+  width: fit-content;
+}
+
+.about-stats-band { background:var(--vellum); border-top:0.5px solid var(--cream-dk); border-bottom:0.5px solid var(--cream-dk); }
+.about-stats-inner { display:grid; grid-template-columns:repeat(4,1fr); }
+.about-stat-col { padding:40px; border-right:0.5px solid var(--cream-dk); text-align:center; }
+.about-stat-col:last-child { border-right:none; }
+.about-stat-num { font-family:var(--serif); font-size:48px; font-weight:300; color:var(--ink); line-height:1; }
+.about-stat-label { font-family:var(--mono); font-size:9px; letter-spacing:0.14em; text-transform:uppercase; color:var(--sepia); margin-top:8px; }

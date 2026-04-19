@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Museum!</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Spectral:ital,wght@0,300;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --linen:     #f4ede5;
+      --parchment: #faf6f1;
+      --vellum:    #e8e0d5;
+      --ink:       #3a2e24;
+      --ink-2:     #5a4a3a;
+      --sepia:     #6b5d4f;
+      --sepia-lt:  #9a8d7e;
+      --moss:      #2d7a5e;
+      --rust:      #8b4513;
+      --cream-dk:  #c4b5a0;
+      --navy-deep: #1a4a40;
+      --navy-mid:  #256b5c;
+      --navy-soft: #5a9a8a;
+      --paper:     rgba(255,255,255,0.92);
+
+      --serif:     'Cormorant Garamond', Georgia, serif;
+      --alt-serif: 'Spectral', Georgia, serif;
+      --mono:      'DM Mono', 'Courier New', monospace;
+    }
+
+    html, body {
+      width: 100%; height: 100%;
+      overflow: hidden;
+      background: var(--ink);
+      font-family: var(--serif);
+      cursor: none;
+    }
+
+    canvas#bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+    }
+
+    /* warm museum tint over the 3D canvas */
+    #scene-tint {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      background:
+        radial-gradient(ellipse 90% 80% at 50% 50%,
+          rgba(26,74,64,0.72),
+          rgba(26,46,36,0.90) 100%);
+      pointer-events: none;
+    }
+
+    /* custom cursor */
+    #cursor-dot {
+      position: fixed;
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--linen);
+      box-shadow: 0 0 8px 2px rgba(244,237,229,0.35);
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+    }
+
+    /* stage */
+    #stage {
+      position: fixed;
+      inset: 0;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ── Opening card — matches museum .hero / .paper panel ── */
+    .opening-card {
+      background: rgba(250,246,241,0.055);
+      border-radius: 12px;
+      border: 0.5px solid rgba(196,181,160,0.30);
+      backdrop-filter: blur(3px);
+      width: min(620px, calc(100vw - 48px));
+      box-shadow:
+        0 32px 80px rgba(0,0,0,0.50),
+        0 0 0 0.5px rgba(196,181,160,0.10);
+      opacity: 0;
+      transform: translateY(22px);
+      animation: cardIn 0.9s 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes cardIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 11px 28px;
+      border-bottom: 0.5px solid rgba(196,181,160,0.20);
+      background: rgba(62,37,8,0.28);
+    }
+
+    .dot-live {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--moss);
+      animation: pulse 2.5s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.22} }
+
+    .topbar-left { display: flex; align-items: center; gap: 12px; }
+
+    .mono-xs {
+      font-family: var(--mono);
+      font-size: 8px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(196,181,160,0.55);
+    }
+
+    .card-body {
+      padding: 52px 56px 40px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      gap: 22px;
+      border-bottom: 0.5px solid rgba(196,181,160,0.18);
+    }
+
+    .opening-eyebrow {
+      font-family: var(--mono);
+      font-size: 8.5px;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--navy-soft);
+      display: flex;
+      gap: 14px;
+      text-align: center;
+      justify-content: center;
+
+    }
+    .opening-eyebrow::before {
+      width: 32px;
+      height: 0.5px;
+      background: var(--navy-soft);
+      opacity: 0.7;
+      text-align: center;
+    }
+
+    .opening-title {
+      font-family: var(--serif);
+      font-size: clamp(44px, 8vw, 80px);
+      line-height: 0.96;
+      letter-spacing: -0.02em;
+      color: var(--linen);
+      text-align: center;
+      text-shadow: #3a2e24 0px 4px 12px, rgba(58,46,36,0.28) 0px 8px 32px;
+    }
+
+    .opening-title em {
+      font-style: bold italic;
+      color: rgba(196,181,160,0.80);
+      text-align: center;
+    }
+
+    .opening-rule {
+      border: none;
+      border-top: 0.5px solid rgba(196,181,160,0.18);
+    }
+
+    .opening-desc {
+      font-family: var(--alt-serif);
+      font-size: 14px;
+      font-style: italic;
+      color: rgba(196,181,160,0.65);
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .card-footer {
+      padding: 28px 56px 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    #enter-btn {
+      font-family: var(--mono);
+      font-size: 8.5px;
+      font-style: bold;
+      letter-spacing: 0.20em;
+      text-transform: uppercase;
+      color: var(--linen);
+      background: rgba(250,246,241,0.055);
+      border: 0.5px solid var(--linen);
+      padding: 13px 32px;
+      cursor: none;
+      outline: none;
+      transition: background 0.2s, border-color 0.2s;
+      display: inline-flex;
+      align-items: center;
+      border-radius: 5px;
+      gap: 10px;
+    }
+
+    #enter-btn:hover {
+      background: var(--vellum);
+      border-color: var(--vellum);
+    }
+    #enter-btn .arr { transition: transform 0.2s; }
+    #enter-btn:hover .arr { transform: translateX(4px); }
+
+    /* progress area */
+    .progress-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+      flex: 1;
+      max-width: 200px;
+    }
+    .progress-label {
+      font-family: var(--mono);
+      font-size: 7.5px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(196,181,160,0.40);
+    }
+    #countdown-n {
+      color: rgba(196,181,160,0.70);
+      font-variant-numeric: tabular-nums;
+    }
+    .progress-track {
+      width: 100%;
+      height: 1px;
+      background: rgba(196,181,160,0.12);
+    }
+    #progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, rgba(45,122,94,0.55), rgba(90,154,138,0.75));
+      transition: width 0.05s linear;
+    }
+
+    /* ── bottom info strip — mirrors .info-band / hero-stats ── */
+    .card-strip {
+      display: grid;
+      grid-template-columns: 1fr 0.5px 1fr 0.5px 1fr;
+      border-top: 0.5px solid rgba(196,181,160,0.18);
+    }
+    .strip-div  { background: rgba(196,181,160,0.16); }
+    .strip-col  { padding: 14px 22px; display: flex; flex-direction: column; gap: 4px; }
+    .strip-key  { font-family: var(--mono); font-size: 7.5px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(196,181,160,0.38); }
+    .strip-val  { font-family: var(--alt-serif); font-size: 12.5px; font-weight: 300; color: rgba(196,181,160,0.68); }
+
+    /* page transition flash */
+    #flash {
+      position: fixed;
+      inset: 0;
+      background: var(--parchment);
+      z-index: 9999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.38s ease;
+    }
+    #flash.go { opacity: 1; pointer-events: all; }
+  </style>
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+<div id="scene-tint"></div>
+<div id="cursor-dot"></div>
+
+<div id="stage">
+  <div class="opening-card">
+
+    <!-- topbar -->
+    <div class="card-topbar">
+      <span class="mono-xs" id="clock-el">—</span>
+    </div>
+
+    <!-- content -->
+    <div class="card-body">
+      <div class="opening-eyebrow">Website by Pos Kamling — Sistem Informasi UNMUL</div>
+
+      <h1 class="opening-title">
+        Welcome<br><em>to Museum Kota.</em>
+      </h1>
+
+      <hr class="opening-rule" />
+
+      <p class="opening-desc">
+        Koleksi artefak, seni, dan sejarah terpilih dari seluruh nusantara; tersimpan, terawat, dan dihadirkan untuk rakyat.
+      </p>
+    </div>
+
+    <!-- footer -->
+    <div class="card-footer">
+      <button id="enter-btn">
+        Masuk ke Museum <span class="arr">→</span>
+      </button>
+
+      <div class="progress-wrap">
+        <div class="progress-label">
+          Auto-masuk dalam <span id="countdown-n">60</span>d
+        </div>
+        <div class="progress-track">
+          <div id="progress-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- strip -->
+    <div class="card-strip">
+      <div class="strip-col">
+        <span class="strip-key">Status</span>
+        <span class="strip-val">Buka Hari Ini</span>
+      </div>
+      <div class="strip-div"></div>
+      <div class="strip-col">
+        <span class="strip-key">Jam Buka</span>
+        <span class="strip-val">08.00 — 16.00</span>
+      </div>
+      <div class="strip-div"></div>
+      <div class="strip-col">
+        <span class="strip-key">Koleksi</span>
+        <span class="strip-val">100+ Artefak</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="flash"></div>
+
+<script type="module">
+  import TubesCursor from 'https://cdn.jsdelivr.net/npm/threejs-components@0.0.19/build/cursors/tubes1.min.js';
+
+  const canvas = document.getElementById('bg');
+  const app = TubesCursor(canvas, {
+    tubes: {
+      count: 10,
+      colors: ['#2d7a5e','#5a9a8a','#8b4513','#c4b5a0','#1a4a40'],
+      speed: 0.65,
+      radius: 0.006,
+      lights: {
+        intensity: 180,
+        colors: ['#2d7a5e','#1a4a40','#8b4513','#c4b5a0']
+      }
+    },
+    motion: { parallax: 0.016, smoothness: 0.09 },
+    bloom: { strength: 0.65, radius: 0.38, threshold: 0.14 }
+  });
+
+  const palette = ['#2d7a5e','#5a9a8a','#8b4513','#c4b5a0','#1a4a40','#6b5d4f','#256b5c','#3a2e24'];
+  const pick = n => [...palette].sort(() => Math.random()-.5).slice(0,n);
+  canvas.addEventListener('click', () => { app.tubes.setColors(pick(3)); app.tubes.setLightsColors(pick(4)); });
+
+  /* cursor */
+  const dot = document.getElementById('cursor-dot');
+  window.addEventListener('mousemove', e => {
+    dot.style.left = e.clientX + 'px';
+    dot.style.top  = e.clientY + 'px';
+  });
+
+  /* live clock */
+  const clockEl = document.getElementById('clock-el');
+  const tick = () => { clockEl.textContent = new Date().toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}); };
+  tick(); setInterval(tick, 1000);
+
+  /* redirect logic */
+  const REDIRECT_TO = 'home.php';  
+  const TOTAL_SEC   = 60;
+  const fill    = document.getElementById('progress-fill');
+  const countEl = document.getElementById('countdown-n');
+  const btn     = document.getElementById('enter-btn');
+  const flash   = document.getElementById('flash');
+
+  let elapsed = 0;
+  const go = () => { flash.classList.add('go'); setTimeout(() => { window.location.href = REDIRECT_TO; }, 400); };
+
+  const iv = setInterval(() => {
+    elapsed += 50;
+    fill.style.width = Math.min(elapsed / (TOTAL_SEC * 1000) * 100, 100) + '%';
+    countEl.textContent = Math.max(0, Math.ceil((TOTAL_SEC * 1000 - elapsed) / 1000));
+    if (elapsed >= TOTAL_SEC * 1000) { clearInterval(iv); go(); }
+  }, 50);
+
+  btn.addEventListener('click', () => { clearInterval(iv); setTimeout(go, 120); });
+</script>
+
+</body>
+</html>
