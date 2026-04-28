@@ -25,6 +25,80 @@
 }
 .btn-secondary:hover { background: var(--cream-dk); }
 
+.menu-wrapper {
+  position: relative;
+}
+
+.menu-trigger {
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+  padding: 4px 8px;
+  color: var(--sepia);
+  user-select: none;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 28px;
+  min-width: 110px;
+  background: #fffaf3;
+  border: 1px solid rgba(90, 60, 35, 0.18);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  border-radius: 10px;
+  z-index: 20;
+  overflow: hidden;
+}
+
+.menu-dropdown.show {
+  display: block;
+}
+
+.menu-item {
+  padding: 10px 14px;
+  font-family: var(--alt-serif);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background: var(--parchment);
+}
+
+.menu-item.delete {
+  color: #b42318;
+}
+.ulasan-full-card {
+  position: relative;
+}
+
+.ulasan-full-card > div:first-child {
+  position: relative;
+  z-index: 50;
+}
+
+.menu-wrapper {
+  position: relative;
+  z-index: 999;
+  margin-left: 12px;
+}
+
+.menu-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  color: #5b3a22 !important;
+  background: rgba(255, 250, 243, 0.9);
+  border-radius: 50%;
+}
+
+.menu-dropdown {
+  z-index: 9999;
+}
 /* ─── Animasi kartu baru ─── */
 @keyframes fadeSlideIn {
   from { opacity: 0; transform: translateY(-10px); }

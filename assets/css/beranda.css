@@ -17,7 +17,7 @@
   --navy-mid:  #256b5c;         /* medium teal */
   --navy-soft: #5a9a8a;         /* soft teal */
   --paper:     rgba(255,255,255,0.92);
-  --pattern-url: url("../3.webp"); 
+  --pattern-url: url("../3.webp");
 
   --serif: 'Cormorant Garamond', Georgia, serif;
   --alt-serif: 'Spectral', Georgia, serif;
@@ -36,6 +36,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   overflow-x: hidden;
+  background: #e8ded1 !important;
 }
 body::before {
   content: '';

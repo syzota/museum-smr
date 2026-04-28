@@ -148,54 +148,53 @@ unset(
         <!-- FORM DAFTAR — action ke proses/signup_proses.php via POST -->
         <form method="POST" action="proses/signup_proses.php" novalidate>
 
-          <div class="form-group">
-            <label class="form-label" for="nama">Nama Lengkap</label>
+          <div class="form-group" style="margin-bottom: 18px;">
+            <label class="form-label" for="nama" style="display: block; margin-bottom: 6px;">Nama Lengkap</label>
             <input type="text" id="nama" name="nama" class="form-input"
-                   placeholder="Nama lengkap Anda"
-                   value="<?= htmlspecialchars($formNama) ?>"
-                   autocomplete="name" required>
+                  placeholder="Nama lengkap Anda"
+                  value="<?= htmlspecialchars($formNama) ?>"
+                  autocomplete="name" required>
           </div>
 
-          <div class="form-group">
-            <label class="form-label" for="email">Email</label>
+          <div class="form-group" style="margin-bottom: 18px;">
+            <label class="form-label" for="email" style="display: block; margin-bottom: 6px;">Email</label>
             <input type="email" id="email" name="email" class="form-input"
-                   placeholder="contoh@email.com"
-                   value="<?= htmlspecialchars($formEmail) ?>"
-                   autocomplete="email" required>
+                  placeholder="contoh@email.com"
+                  value="<?= htmlspecialchars($formEmail) ?>"
+                  autocomplete="email" required>
           </div>
 
-          <div class="form-group">
-            <label class="form-label" for="pekerjaan">Instansi / Pekerjaan <span style="opacity:.5;">(opsional)</span></label>
+          <div class="form-group" style="margin-bottom: 18px;">
+            <label class="form-label" for="pekerjaan" style="display: block; margin-bottom: 6px;">Instansi / Pekerjaan <span style="opacity:.5;">(opsional)</span></label>
             <input type="text" id="pekerjaan" name="pekerjaan" class="form-input"
-                   placeholder="Sekolah, komunitas, atau institusi"
-                   value="<?= htmlspecialchars($formPekerjaan) ?>"
-                   autocomplete="organization">
+                  placeholder="Sekolah, komunitas, atau institusi"
+                  value="<?= htmlspecialchars($formPekerjaan) ?>"
+                  autocomplete="organization">
           </div>
 
-          <div class="form-group">
-            <label class="form-label" for="password">Kata Sandi</label>
+          <div class="form-group" style="margin-bottom: 18px;">
+            <label class="form-label" for="password" style="display: block; margin-bottom: 6px;">Kata Sandi</label>
             <input type="password" id="password" name="password" class="form-input"
-                   placeholder="Minimal 8 karakter"
-                   autocomplete="new-password" required>
+                  placeholder="Minimal 8 karakter"
+                  autocomplete="new-password" required>
           </div>
 
-          <div class="form-group">
-            <label class="form-label" for="password_konfirm">Konfirmasi Kata Sandi</label>
+          <div class="form-group" style="margin-bottom: 20px;">
+            <label class="form-label" for="password_konfirm" style="display: block; margin-bottom: 6px;">Konfirmasi Kata Sandi</label>
             <input type="password" id="password_konfirm" name="password_konfirm" class="form-input"
-                   placeholder="Ulangi kata sandi"
-                   autocomplete="new-password" required>
+                  placeholder="Ulangi kata sandi"
+                  autocomplete="new-password" required>
           </div>
 
-          <div class="auth-row">
-            <label class="auth-check">
+          <div class="auth-row" style="margin-bottom: 25px;">
+            <label class="auth-check" style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
               <input type="checkbox" name="setuju" required>
-              Saya menyetujui kebijakan penggunaan akun
+              <span>Saya menyetujui kebijakan penggunaan akun</span>
             </label>
           </div>
 
-          <div class="auth-actions">
+          <div class="auth-actions" style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px;">
             <button type="submit" class="btn-primary">Buat Akun →</button>
-            <button type="button" class="btn-ghost" onclick="location.href='login.php'">Sudah Punya Akun</button>
           </div>
 
         </form>

@@ -200,6 +200,10 @@ $isLoggedIn = isLoggedIn();
   </div>
 </footer>
 
+<script>
+  const currentUserId = <?= isset($_SESSION['user_id']) ? (int) $_SESSION['user_id'] : 'null' ?>;
+</script>
+
 <script src="assets/js/ulasan.js"></script>
 <script src="assets/js/scroll-fade-in.js"></script>
 </body>

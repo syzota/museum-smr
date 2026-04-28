@@ -35,13 +35,36 @@ function renderGrid(list) {
   grid.innerHTML = list.map((k, idx) => {
     const bg = idx % 2 === 1 ? 'background:var(--parchment);' : '';
     return `
-      <div class="ulasan-full-card" style="${bg}">
-        <div class="ulasan-text">"${escHtml(k.isi_komentar)}"</div>
-        <div class="ulasan-meta">
-          <span class="ulasan-name">${escHtml(k.nama)}</span>
-          <span class="ulasan-date">${formatTanggal(k.tanggal)}</span>
+       <div class="ulasan-full-card" style="${bg}">
+
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <span class="ulasan-name">${escHtml(k.nama)}</span>
+
+      ${
+        currentUserId && k.user_id == currentUserId
+        ? `
+        <div class="menu-wrapper">
+          <div class="menu-trigger" onclick="toggleMenu(${k.id})">⋮</div>
+          <div class="menu-dropdown" id="menu-${k.id}">
+            <div class="menu-item delete" onclick="hapusUlasan(${k.id})">
+              Hapus
+            </div>
+          </div>
         </div>
-      </div>`;
+        `
+        : ''
+      }
+
+    </div>
+
+    <div class="ulasan-text">"${escHtml(k.isi_komentar)}"</div>
+
+    <div class="ulasan-meta">
+      <span class="ulasan-date">${formatTanggal(k.tanggal)}</span>
+    </div>
+
+  </div>
+`;
   }).join('');
 }
 
@@ -74,6 +97,38 @@ function prependCard(k) {
   if (label) {
     const n = grid.querySelectorAll('.ulasan-full-card').length;
     label.textContent = n + ' Ulasan';
+  }
+}
+
+function toggleMenu(id) {
+  document.querySelectorAll('.menu-dropdown').forEach(menu => {
+    if (menu.id !== `menu-${id}`) menu.classList.remove('show');
+  });
+
+  const menu = document.getElementById(`menu-${id}`);
+  if (menu) menu.classList.toggle('show');
+}
+
+async function hapusUlasan(id) {
+  if (!confirm('Yakin mau hapus ulasan ini?')) return;
+
+  try {
+    const res = await fetch('api/ulasan.php', {
+      method: 'DELETE',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: id })
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      alert(data.error || 'Gagal menghapus ulasan.');
+      return;
+    }
+
+    fetchKomentar();
+  } catch (err) {
+    alert('Gagal menghubungi server.');
   }
 }
 
@@ -137,9 +192,27 @@ function formatTanggal(str) {
 }
 
 function escHtml(s) {
-  return String(s)
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
-    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  if (!s) return '';
+  const map = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+    '/': '&#x2F;',
+    '`': '&#96;',
+    '=': '&#61;',
+    '(': '&#40;',
+    ')': '&#41;',
+    '[': '&#91;',
+    ']': '&#93;',
+    '{': '&#123;',
+    '}': '&#125;',
+    '!': '&#33;',
+    '+': '&#43;',
+    '-': '&#45;'
+  };
+  return String(s).replace(/[&<>"'`=\/\(\)\[\]\{\}!\+\-]/g, (char) => map[char]);
 }
 
 // ── Sidebar ───────────────────────────────────────────────────────────────────

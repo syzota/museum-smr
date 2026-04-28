@@ -2,7 +2,7 @@
    PAGE: EVENT & KEGIATAN
 ══════════════════════════════════════════════ */
 .event-full-grid { display:grid; grid-template-columns:1fr 280px; gap:0; border:0.5px solid var(--cream-dk); background:var(--cream-dk); }
-.event-main { background:var(--linen); }
+.event-main { background:var(--ink); }
 .event-sidebar { background:var(--parchment); padding:28px; display:flex; flex-direction:column; gap:24px; }
 .event-full-item { display:grid; grid-template-columns:90px 1px 1fr; gap:0; border-bottom:0.5px solid var(--cream-dk); cursor:pointer; transition:background 0.2s; }
 .event-full-item:last-child { border-bottom:none; }

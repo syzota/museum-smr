@@ -139,33 +139,32 @@ unset($_SESSION['flash_error'], $_SESSION['flash_success']);
           </div>
         <?php endif; ?>
 
-        <!-- FORM LOGIN — action ke proses/login_proses.php via POST -->
         <form method="POST" action="proses/login_proses.php" novalidate>
 
-          <div class="form-group">
-            <label class="form-label" for="email">Email</label>
+          <div class="form-group" style="margin-bottom: 20px;">
+            <label class="form-label" for="email" style="display: block; margin-bottom: 8px;">Email</label>
             <input type="email" id="email" name="email" class="form-input"
-                   placeholder="contoh@email.com"
-                   value="<?= htmlspecialchars($_SESSION['form_email'] ?? '') ?>"
-                   autocomplete="email" required>
+                  placeholder="contoh@email.com"
+                  value="<?= htmlspecialchars($_SESSION['form_email'] ?? '') ?>"
+                  autocomplete="email" required>
           </div>
 
-          <div class="form-group">
-            <label class="form-label" for="password">Kata Sandi</label>
+          <div class="form-group" style="margin-bottom: 20px;">
+            <label class="form-label" for="password" style="display: block; margin-bottom: 8px;">Kata Sandi</label>
             <input type="password" id="password" name="password" class="form-input"
-                   placeholder="Masukkan kata sandi"
-                   autocomplete="current-password" required>
+                  placeholder="Masukkan kata sandi"
+                  autocomplete="current-password" required>
           </div>
 
-          <div class="auth-row">
-            <label class="auth-check">
+          <div class="auth-row" style="margin-bottom: 25px; display: flex; justify-content: space-between; align-items: center;">
+            <label class="auth-check" style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
               <input type="checkbox" name="ingat_saya">
               Ingat saya di perangkat ini
             </label>
-            <a href="#">Lupa sandi?</a>
+            <a href="#" style="text-decoration: none; font-size: 0.9rem;">Lupa sandi?</a>
           </div>
 
-          <div class="auth-actions">
+          <div class="auth-actions" style="display: flex; flex-direction: column; gap: 12px;">
             <button type="submit" class="btn-primary">Masuk Sekarang →</button>
             <button type="button" class="btn-ghost" onclick="location.href='signup.php'">Buat Akun Baru</button>
           </div>
