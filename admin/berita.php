@@ -26,7 +26,7 @@
         <button class="filter-tab active" onclick="filterKatBerita('',this)">Semua</button>
       </div>
       <table class="data-table" id="berita-table">
-        <thead>
+        <thead class="table-dark">
           <tr>
             <th>Tanggal</th>
             <th>Judul Berita</th>
