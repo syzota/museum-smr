@@ -1,4 +1,4 @@
-</div>
+<img width="3153" height="1717" alt="image" src="https://github.com/user-attachments/assets/1ca085ad-cee1-4545-8d53-931fa3fbd870" /><img width="3140" height="1726" alt="image" src="https://github.com/user-attachments/assets/387d498f-4cfb-407f-9100-873642832cf8" /></div>
 
 <img width="1919" height="479" alt="image" src="https://github.com/user-attachments/assets/dabc5cf0-8948-4d5d-b5e7-77bac755a63c" />
 
@@ -445,7 +445,7 @@ museum-kota-samarinda/
 > 📌 *Login Page*
 > <img width="3116" height="1790" alt="Macbook-Air-museum-smr ct ws (1)" src="https://github.com/user-attachments/assets/dca167b3-5ad2-4530-86e9-17764780a659" />
 >
-> 📌 *Insert screenshot Register / Daftar Akun Page*
+> 📌 *Screenshot Register / Daftar Akun Page*
 > <img width="3116" height="1790" alt="Macbook-Air-museum-smr ct ws (2)" src="https://github.com/user-attachments/assets/f3b81f60-9b15-4d95-82b9-c229cedd9e7c" />
 >
 ---
@@ -465,59 +465,89 @@ museum-kota-samarinda/
 > <img width="1900" height="1001" alt="image" src="https://github.com/user-attachments/assets/bb3f5aee-3a35-4b5e-91a8-ecaedd89bd55" />
 > 📌 *Screenshot slide panel detail koleksi*
 > <img width="1716" height="1010" alt="image" src="https://github.com/user-attachments/assets/a6fb37c7-0071-4a12-9774-7282406baf89" />
->
+
 ---
 
 ### Kegiatan & Event ⍟
-> 📌 *Insert screenshot halaman event — daftar event + sidebar*
-
+> 📌 *Screenshot halaman event — daftar event*
+> <img width="3116" height="1790" alt="Macbook-Air-museum-smr ct ws (3)" src="https://github.com/user-attachments/assets/88796499-e754-4a8b-aebc-8c8e0acb7d63" />
 ---
 
 ### Berita ⍟
-> 📌 *Insert screenshot halaman berita — grid artikel + filter Vue.js*
-
+> 📌 *Screenshot halaman berita — grid artikel + filter Vue.js*
+> <img width="3146" height="1735" alt="image" src="https://github.com/user-attachments/assets/2746ab10-ae92-4ce3-8fa2-3cc6305df981" />
+> 📌 *Screenshot slide panel detail berita*
+> <img width="3181" height="1729" alt="image" src="https://github.com/user-attachments/assets/19b5552b-89bf-46bc-9b31-414b09f074a5" />
 ---
 
 ### Peminjaman Ruangan ⍟
-> 📌 *Insert screenshot form peminjaman + kalender ketersediaan*
-
-> 📌 *Insert screenshot pratinjau & kirim ke WhatsApp*
+> 📌 *Screenshot kalender ketersediaan*
+> <img width="3143" height="1721" alt="image" src="https://github.com/user-attachments/assets/cefafc87-6f72-42af-bb37-9c8dfaa8d62e" />
+> 📌 *Screenshot form peminjaman*
+> <img width="3145" height="1717" alt="image" src="https://github.com/user-attachments/assets/29b7804d-bca3-4d20-abaa-3f6001d4d30b" />
+> 📌 *Screenshot pratinjau*
+> <img width="3135" height="1739" alt="image" src="https://github.com/user-attachments/assets/546fe92e-dea1-4ce5-9006-b0af92d81ff2" />
+> 📌 *Screenshot kirim ke WhatsApp*
+> <img width="3171" height="1726" alt="image" src="https://github.com/user-attachments/assets/41903071-bffa-4069-bfa4-8721bed13f91" />
+> <img width="3133" height="1731" alt="image" src="https://github.com/user-attachments/assets/9601044d-4045-477e-879b-d625ae78e6fb" />
 
 ---
 
 ### Peta Lokasi ⍟
-> 📌 *Insert screenshot halaman peta — Google Maps embed*
-
+> 📌 *Screenshot halaman peta — Google Maps embed*
+> <img width="3136" height="1710" alt="image" src="https://github.com/user-attachments/assets/72a1f418-1014-48eb-90dd-eb3449ffe2bb" />
 ---
 
 ### Tentang Museum ⍟
-> 📌 *Insert screenshot profil museum — sejarah, visi misi, linimasa*
+> 📌 *Screenshot profil museum — sejarah, visi misi, linimasa*
+> <img width="3140" height="1707" alt="image" src="https://github.com/user-attachments/assets/ff3e83ee-109b-4a1d-bb82-5bb0eca8cfa8" />
+> 📌 *Screenshot linimasa*
+> <img width="3126" height="1721" alt="image" src="https://github.com/user-attachments/assets/3ce834de-1afd-4e4d-a2ba-8192a31970cf" />
+> 📌 *Screenshot Creative Squad*
+> <img width="3127" height="1618" alt="image" src="https://github.com/user-attachments/assets/895d6e2e-96d4-4cc6-82a3-e8636db836f2" />
 
 ---
 
 ### Ulasan & Kesan ⍟
-> 📌 *Insert screenshot halaman ulasan + form komentar*
+> 📌 *Screenshot halaman ulasan*
+> <img width="3129" height="1725" alt="image" src="https://github.com/user-attachments/assets/0dd2941d-980f-4a39-9f4d-d7ff1213b7c1" />
 
 ---
 
 ### Dashboard Admin ⍟
-> 📌 *Insert screenshot dashboard admin — ringkasan data + grafik Chart.js*
+> 📌 *Screenshot dashboard admin — ringkasan data + grafik Chart.js*
+> <img width="3133" height="1734" alt="image" src="https://github.com/user-attachments/assets/5a040008-5072-409d-9ebe-35d0ba8b7a82" />
 
 ---
 
 ### Admin — Kelola Koleksi ⍟
-> 📌 *Insert screenshot tabel koleksi + modal tambah/edit/hapus*
-
+> 📌 *Screenshot tabel koleksi + modal tambah/edit/hapus*
+> <img width="3140" height="1726" alt="image" src="https://github.com/user-attachments/assets/094070de-9936-4d13-bc6e-f573c2b19e4b" />
+> 📌 *Screenshot tambah koleksi*
+<img width="3132" height="1714" alt="image" src="https://github.com/user-attachments/assets/3490f457-1496-4511-856f-27620b79071d" />
+> 📌 *Screenshot edit koleksi*
+> <img width="3147" height="1721" alt="image" src="https://github.com/user-attachments/assets/2abdde55-c827-4b88-93dd-ab65d65c9198" />
+> 📌 *Screenshot hapus koleksi*
+> <img width="3113" height="1711" alt="image" src="https://github.com/user-attachments/assets/b8ddd180-c4c5-4e24-b898-e0fdee35771c" />
 ---
 
 ### Admin — Kelola Kegiatan ⍟
-> 📌 *Insert screenshot tabel kegiatan + modal*
-
+> 📌 *Screenshot tabel kegiatan*
+<img width="3149" height="1723" alt="image" src="https://github.com/user-attachments/assets/5469a061-22c6-48f1-9f5e-51bcde9ff028" />
+> 📌 *Screenshot tambah kegiatan*
+> <img width="3155" height="1718" alt="image" src="https://github.com/user-attachments/assets/c77ff98d-ee13-4043-9f48-4157bfcce551" />
+> 📌 *Screenshot edit kegiatan*
+> <img width="3135" height="1716" alt="image" src="https://github.com/user-attachments/assets/87cf71a2-d86c-446d-9966-b7f6b7f68ebd" />
+> 📌 *Screenshot hapus kegiatan*
+> <img width="3147" height="1724" alt="image" src="https://github.com/user-attachments/assets/d2ec6347-a971-446e-a87a-b84942def59e" />
 ---
 
 ### Admin — Kelola Berita ⍟
-> 📌 *Insert screenshot tabel berita Bootstrap (table-dark) + modal*
-
+> 📌 *Screenshot tabel berita*
+> <img width="3153" height="1717" alt="image" src="https://github.com/user-attachments/assets/b4a5b3c3-8c0a-4404-8fa6-1412a93f223c" />
+> 📌 *Screenshot  kegiatan*
+> 📌 *Screenshot hapus kegiatan*
+> 📌 *Screenshot hapus kegiatan*
 ---
 
 ### Admin — Kelola Peminjaman ⍟
