@@ -1,4 +1,4 @@
-<div align="center">
+<img width="1907" height="1008" alt="image" src="https://github.com/user-attachments/assets/e8af168a-5f93-4be3-aba1-8a409d8e57e1" /><div align="center">
 
 <img src="assets/logo.png" alt="Museum Kota Samarinda Logo" width="120" />
 
@@ -434,29 +434,38 @@ museum-kota-samarinda/
 ## **Program Flows** ⭑ & Graphical User Interface (GUI) —͟͟͞͞★
 
 ### Landing Page ⍟
-> 📌 *Insert screenshot Landing Page — Three.js 3D tubes animation, opening card, countdown timer*
+> 📌 *Screenshot Landing Page — Three.js 3D tubes animation, opening card, countdown timer*
+> 
+> <img width="3116" height="1790" alt="Macbook-Air-museum-smr ct ws" src="https://github.com/user-attachments/assets/04b22d21-ac55-4fd4-bd84-2b4754a5b54a" />
+>
 
 ---
 
 ### Login & Register Page ⍟
-> 📌 *Insert screenshot Login Page*
-
+> 📌 *Login Page*
+> <img width="3116" height="1790" alt="Macbook-Air-museum-smr ct ws (1)" src="https://github.com/user-attachments/assets/dca167b3-5ad2-4530-86e9-17764780a659" />
+>
 > 📌 *Insert screenshot Register / Daftar Akun Page*
-
+> <img width="3116" height="1790" alt="Macbook-Air-museum-smr ct ws (2)" src="https://github.com/user-attachments/assets/f3b81f60-9b15-4d95-82b9-c229cedd9e7c" />
+>
 ---
 
 ### Beranda (Home) ⍟
-> 📌 *Insert screenshot Beranda — hero section + koleksi unggulan*
-
-> 📌 *Insert screenshot Beranda — section event, berita, ulasan*
-
+> 📌 *Screenshot Beranda — hero section + koleksi unggulan*
+> <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/60aa730e-87b6-4536-85c4-df4d214bf0f1" />
+> <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/57d0ac1b-5649-44c8-bc4b-6c25b262916f" />
+> 📌 *Beranda — section event, berita, ulasan*
+> <img width="1907" height="1008" alt="image" src="https://github.com/user-attachments/assets/04a28ee3-0ea9-4d2c-9dfd-a04bc9787bc3" />
+> <img width="1902" height="1008" alt="image" src="https://github.com/user-attachments/assets/67e629f5-131a-4741-95f4-3d92cd189e9d" />
+> 
 ---
 
 ### Katalog Koleksi ⍟
-> 📌 *Insert screenshot halaman katalog koleksi — grid card + filter kategori*
-
-> 📌 *Insert screenshot slide panel detail koleksi*
-
+> 📌 *Katalog koleksi — grid card + filter kategori*
+> <img width="1900" height="1001" alt="image" src="https://github.com/user-attachments/assets/bb3f5aee-3a35-4b5e-91a8-ecaedd89bd55" />
+> 📌 *Screenshot slide panel detail koleksi*
+> <img width="1716" height="1010" alt="image" src="https://github.com/user-attachments/assets/a6fb37c7-0071-4a12-9774-7282406baf89" />
+>
 ---
 
 ### Kegiatan & Event ⍟
