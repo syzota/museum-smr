@@ -12,7 +12,6 @@
   <img src="https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"/>
   <img src="https://img.shields.io/badge/Three.js-Landing-000000?style=for-the-badge&logo=three.js&logoColor=white"/>
   <img src="https://img.shields.io/badge/Chart.js-Dashboard-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Anime.js-Animation-FF6B6B?style=for-the-badge"/>
 </p>
 
 <p>
@@ -56,7 +55,6 @@ Sistem memiliki dua jenis pengguna: **Admin** yang mengelola seluruh data museum
 **Nilai Tambah:**
 - [x] Animasi 3D interaktif pada Landing Page menggunakan Three.js
 - [x] Grafik statistik dashboard admin menggunakan Chart.js
-- [x] Smooth animation & transisi halaman menggunakan Anime.js
 - [x] Integrasi Google Maps untuk peta lokasi museum
 - [x] Integrasi WhatsApp otomatis untuk konfirmasi peminjaman ruangan
 - [x] Live search & filter kategori reaktif menggunakan Vue.js 3
