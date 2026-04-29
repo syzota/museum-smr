@@ -1,8 +1,4 @@
-<img width="3153" height="1717" alt="image" src="https://github.com/user-attachments/assets/1ca085ad-cee1-4545-8d53-931fa3fbd870" /><img width="3140" height="1726" alt="image" src="https://github.com/user-attachments/assets/387d498f-4cfb-407f-9100-873642832cf8" /></div>
-
-<img width="1919" height="479" alt="image" src="https://github.com/user-attachments/assets/dabc5cf0-8948-4d5d-b5e7-77bac755a63c" />
-
-# ✦ Museum Kota Samarinda
+<img width="3161" height="1730" alt="image" src="https://github.com/user-attachments/assets/902c63a5-8fb2-425a-a5d0-8309544dac49" /># ✦ Museum Kota Samarinda
 ### *Website Informasi & Digitalisasi Museum Berbasis Web*
 
 <p>
@@ -521,10 +517,10 @@ museum-kota-samarinda/
 ---
 
 ### Admin — Kelola Koleksi ⍟
-> 📌 *Screenshot tabel koleksi + modal tambah/edit/hapus*
+> 📌 *Screenshot tabel koleksi*
 > <img width="3140" height="1726" alt="image" src="https://github.com/user-attachments/assets/094070de-9936-4d13-bc6e-f573c2b19e4b" />
 > 📌 *Screenshot tambah koleksi*
-<img width="3132" height="1714" alt="image" src="https://github.com/user-attachments/assets/3490f457-1496-4511-856f-27620b79071d" />
+> <img width="3132" height="1714" alt="image" src="https://github.com/user-attachments/assets/3490f457-1496-4511-856f-27620b79071d" />
 > 📌 *Screenshot edit koleksi*
 > <img width="3147" height="1721" alt="image" src="https://github.com/user-attachments/assets/2abdde55-c827-4b88-93dd-ab65d65c9198" />
 > 📌 *Screenshot hapus koleksi*
@@ -533,7 +529,7 @@ museum-kota-samarinda/
 
 ### Admin — Kelola Kegiatan ⍟
 > 📌 *Screenshot tabel kegiatan*
-<img width="3149" height="1723" alt="image" src="https://github.com/user-attachments/assets/5469a061-22c6-48f1-9f5e-51bcde9ff028" />
+> <img width="3149" height="1723" alt="image" src="https://github.com/user-attachments/assets/5469a061-22c6-48f1-9f5e-51bcde9ff028" />
 > 📌 *Screenshot tambah kegiatan*
 > <img width="3155" height="1718" alt="image" src="https://github.com/user-attachments/assets/c77ff98d-ee13-4043-9f48-4157bfcce551" />
 > 📌 *Screenshot edit kegiatan*
@@ -545,28 +541,44 @@ museum-kota-samarinda/
 ### Admin — Kelola Berita ⍟
 > 📌 *Screenshot tabel berita*
 > <img width="3153" height="1717" alt="image" src="https://github.com/user-attachments/assets/b4a5b3c3-8c0a-4404-8fa6-1412a93f223c" />
-> 📌 *Screenshot  kegiatan*
-> 📌 *Screenshot hapus kegiatan*
-> 📌 *Screenshot hapus kegiatan*
+> 📌 *Screenshot tambah berita*
+> <img width="3110" height="1730" alt="image" src="https://github.com/user-attachments/assets/7ed73d66-d903-4e8f-8a66-40367a1f494d" />
+> 📌 *Screenshot edit berita*
+> <img width="3134" height="1730" alt="image" src="https://github.com/user-attachments/assets/de53d773-edae-49bb-b0f1-fbc004516db4" />
+> 📌 *Screenshot hapus berita*
+> <img width="3131" height="1724" alt="image" src="https://github.com/user-attachments/assets/74b0cb3d-e954-42ce-a20b-7425fada9cf0" />
 ---
 
 ### Admin — Kelola Peminjaman ⍟
-> 📌 *Insert screenshot daftar permohonan + filter status*
+> 📌 *Screenshot daftar permohonan + filter status*
+> <img width="3133" height="1734" alt="image" src="https://github.com/user-attachments/assets/7b16e95a-966c-4142-884f-07614e3ad34b" />
+> <img width="3121" height="1717" alt="image" src="https://github.com/user-attachments/assets/0e6ec67b-1835-45b3-9b31-d691c6f50bd3" />
+> <img width="3161" height="1730" alt="image" src="https://github.com/user-attachments/assets/62663393-1aec-4912-9a6d-033162604f2a" />
+> <img width="3151" height="1716" alt="image" src="https://github.com/user-attachments/assets/1b10c478-0b6f-495b-8e91-6b53a92750ea" />
 
 ---
 
 ### Flowchart Login & Registrasi ⍟
-> 📌 *Insert Flowchart Login & Registrasi*
+> 📌 *Flowchart Login & Registrasi*
+> <img width="744" height="679" alt="image" src="https://github.com/user-attachments/assets/f310dc9e-4aaf-4925-bbec-c5a6f58808f6" />
 
 ---
 
 ### Flowchart Alur Pengguna ⍟
-> 📌 *Insert Flowchart Alur Pengguna (User)*
+> 📌 *Flowchart Alur Pengguna (User)*
+> <img width="894" height="456" alt="image" src="https://github.com/user-attachments/assets/11bef565-d129-43e1-92b9-632a1995948c" />
 
 ---
 
 ### Flowchart Alur Admin ⍟
-> 📌 *Insert Flowchart Alur Admin (CRUD Koleksi, Kegiatan, Berita)*
+> 📌 *Flowchart Alur Admin*
+> <img width="639" height="806" alt="image" src="https://github.com/user-attachments/assets/5a1749ba-63ff-4460-b0a3-4acdefba7808" />
+> 📌 *Flowchart Alur Admin CRUD Koleksi*
+> <img width="631" height="417" alt="image" src="https://github.com/user-attachments/assets/78294308-1a05-40c6-9f1f-07b68754a1d3" />
+> 📌 *Flowchart Alur Admin CRUD Kegiatan*
+> <img width="626" height="413" alt="image" src="https://github.com/user-attachments/assets/6467b4a6-4db9-42d5-8564-4eda456b70ff" />
+> 📌 *Flowchart Alur Admin CRUD Berita*
+> <img width="645" height="426" alt="image" src="https://github.com/user-attachments/assets/6acd7427-2ea0-41f1-af91-705165d1e127" />
 
 ---
 
