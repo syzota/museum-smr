@@ -536,7 +536,7 @@ museum-kota-samarinda/
 | No | Nama | NIM | Kontribusi |
 |----|------|-----|------------|
 | 1 | **Hendri Zaidan Safitra** | 2409116013 | Backend, Frontend |
-| 2 | **Putri Syafana Afrillia** | 2409116015 | Fullstack, Database, Hosting |
+| 2 | **Putri Syafana Afrillia** | 2409116015 | Project-Manager, Fullstack, Database, Hosting |
 | 3 | **Indah Putri Lestari** | 2409116004 | Flowchart, Database, Laporan |
 | 4 | **Narendra Augusta Srianandha** | 2409116010 | Design Figma, Frontend |
 
