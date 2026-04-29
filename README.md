@@ -564,25 +564,23 @@ museum-kota-samarinda/
 
 ### Flowchart Login & Registrasi ⍟
 > 📌 *Flowchart Login & Registrasi*
-> <img width="744" height="679" alt="image" src="https://github.com/user-attachments/assets/f310dc9e-4aaf-4925-bbec-c5a6f58808f6" />
-
+> <img width="1626" height="1483" alt="Flowchart PBW-LOGIN-REGIS (1)" src="https://github.com/user-attachments/assets/6de674ef-1ec8-44c0-80b6-14d3c32eddf9" />
 ---
 
 ### Flowchart Alur Pengguna ⍟
 > 📌 *Flowchart Alur Pengguna (User)*
-> <img width="894" height="456" alt="image" src="https://github.com/user-attachments/assets/11bef565-d129-43e1-92b9-632a1995948c" />
-
+> <img width="2621" height="1337" alt="Flowchart PBW-USER drawio (1)" src="https://github.com/user-attachments/assets/d0ae28a5-6cbe-479a-b3a4-e0bdf6f66ea2" />
 ---
 
 ### Flowchart Alur Admin ⍟
 > 📌 *Flowchart Alur Admin*
-> <img width="639" height="806" alt="image" src="https://github.com/user-attachments/assets/5a1749ba-63ff-4460-b0a3-4acdefba7808" />
+> <img width="1288" height="1625" alt="Flowchart PBW-Copy of ADMIN drawio" src="https://github.com/user-attachments/assets/6d1a6e38-3f1e-4f11-b8ab-80448a762b61" />
 > 📌 *Flowchart Alur Admin CRUD Koleksi*
-> <img width="631" height="417" alt="image" src="https://github.com/user-attachments/assets/78294308-1a05-40c6-9f1f-07b68754a1d3" />
+> <img width="1514" height="999" alt="Flowchart PBW-Copy of ADMIN" src="https://github.com/user-attachments/assets/9a234478-ff2c-4a08-bfad-c8eee121965c" />
 > 📌 *Flowchart Alur Admin CRUD Kegiatan*
-> <img width="626" height="413" alt="image" src="https://github.com/user-attachments/assets/6467b4a6-4db9-42d5-8564-4eda456b70ff" />
+> <img width="1513" height="999" alt="Flowchart PBW-Copy of ADMIN drawio (1)" src="https://github.com/user-attachments/assets/0dd77c6a-b864-46a9-b62c-584f95826ab5" />
 > 📌 *Flowchart Alur Admin CRUD Berita*
-> <img width="645" height="426" alt="image" src="https://github.com/user-attachments/assets/6acd7427-2ea0-41f1-af91-705165d1e127" />
+> <img width="1513" height="999" alt="Flowchart PBW-Copy of ADMIN (1)" src="https://github.com/user-attachments/assets/a184cb75-4d48-4810-bdd5-02d844144ae0" />
 
 ---
 
