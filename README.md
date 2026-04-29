@@ -28,7 +28,7 @@
 
 ## **Deskripsi Aplikasi** ★
 
-Website **Museum Kota Samarinda** adalah sistem informasi berbasis web yang dikembangkan sebagai solusi digitalisasi museum untuk masyarakat luas. Hadir sebagai pengembangan mandiri dari sistem lama yang masih tergabung dengan platform UPTD — kini lebih terstruktur, kaya fitur, dan mudah diakses tanpa harus datang langsung ke lokasi.
+Website **Museum Kota Samarinda** adalah sistem informasi berbasis web yang dikembangkan sebagai solusi digitalisasi museum untuk masyarakat luas. Hadir sebagai pengembangan mandiri dari sistem lama yang masih tergabung dengan platform UPTD; kini lebih terstruktur, kaya fitur, dan mudah diakses tanpa harus datang langsung ke lokasi.
 
 Sistem memiliki dua jenis pengguna: **Admin** yang mengelola seluruh data museum secara terpusat, dan **Pengunjung (User)** yang dapat mengakses informasi, memberikan ulasan, serta mengajukan peminjaman ruangan secara online.
 
