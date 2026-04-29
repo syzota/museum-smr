@@ -1,5 +1,3 @@
-<img width="1907" height="1008" alt="image" src="https://github.com/user-attachments/assets/e8af168a-5f93-4be3-aba1-8a409d8e57e1" /><div align="center">
-
 <img src="assets/logo.png" alt="Museum Kota Samarinda Logo" width="120" />
 
 # ✦ Museum Kota Samarinda
@@ -32,7 +30,7 @@ Website **Museum Kota Samarinda** adalah sistem informasi berbasis web yang dike
 
 Sistem memiliki dua jenis pengguna: **Admin** yang mengelola seluruh data museum secara terpusat, dan **Pengunjung (User)** yang dapat mengakses informasi, memberikan ulasan, serta mengajukan peminjaman ruangan secara online.
 
-> 🏛️ Objek Nyata: **Museum Kota Samarinda**, Kalimantan Timur, Indonesia  
+> **Museum Kota Samarinda**, Kalimantan Timur, Indonesia  
 > 🌐 Live Hosting: [http://museum-smr.ct.ws/](http://museum-smr.ct.ws/)
 
 ---
