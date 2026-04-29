@@ -1,4 +1,4 @@
-<img width="3161" height="1730" alt="image" src="https://github.com/user-attachments/assets/902c63a5-8fb2-425a-a5d0-8309544dac49" /># ✦ Museum Kota Samarinda
+# ✦ Museum Kota Samarinda
 ### *Website Informasi & Digitalisasi Museum Berbasis Web*
 
 <p>
