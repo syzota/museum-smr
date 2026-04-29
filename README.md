@@ -1,4 +1,6 @@
-<img src="assets/logo.png" alt="Museum Kota Samarinda Logo" width="120" />
+</div>
+
+<img width="1919" height="479" alt="image" src="https://github.com/user-attachments/assets/dabc5cf0-8948-4d5d-b5e7-77bac755a63c" />
 
 # ✦ Museum Kota Samarinda
 ### *Website Informasi & Digitalisasi Museum Berbasis Web*
